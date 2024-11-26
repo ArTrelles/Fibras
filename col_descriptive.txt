@@ -1,0 +1,91 @@
+c              a(i): Astrometric actual values for the star (not affected by errors)
+c Output values: 
+c -------------
+c Parameters of the star as observed by Gaia (affected by errors)
+c Gaia errors assigned to each parameter:  
+
+c The output parameters of the star as observed by Gaia are: 
+
+c   Astrometric (+Vr) data affected by errors  
+c               ao(i): Astrometric values for the star affected by Gaia errors
+c  COL 1        ao(1): Observed Equatorial heliocentric right ascension (units: radians)
+c  COL 2        ao(2): Observed Equatorial heliocentric declination: delta (units: radians) 
+c  COL 3       ao(3): Observed Parallax: pi (units: as)
+c  COL 4       ao(4): Observed Equatorial proper motions in right ascension in true arcs on the sky: mua_{*}=mua*cos(delta) (units: as/yr)
+c  COL 5       ao(5): Observed Equatorial proper motions: mud (units: as/yr)
+c  COL 6       ao(6): Observed Radial velocity: Vr (units: km/s) 
+
+c               ae(i): Gaia standard deviation (1-sigma) 
+c  COL 7       ae(1): Standard deviation in Equatorial heliocentric right ascension in true arcs on the sky:: alpha_{*}=alpha*cos(delta)  (units: as)
+c  COL 8       ae(2): Standard deviation in Equatorial heliocentric declination: delta (units: as) 
+c  COL 9       ae(3): Standard deviation in Parallax: pi (units: as)
+c  COL 10       ae(4): Standard deviation in Equatorial proper motions in right ascension in true arcs on the sky: mua_{*}=mua*cos(delta) (units: as/yr)
+c  COl 11       ae(5): Standard deviation in Equatorial proper motions: mud (units: as/yr)
+c  COl 12       ae(6): Standard deviation in Radial velocity: Vr (units: km/s) 
+
+c   Photometric data affected by errors (G, G_BP, G_RP, G_RVS)
+
+c               po(i): Photometric values of the star affected by Gaia errors
+c  COL 13       po(1): Observed G magnitude (units: magnitudes) 
+c  COL 14       po(2): Observed G_BP-G_RP   (units: magnitudes) 
+
+
+c               pe(i): Gaia standard deviation (errors, 1-sigma)
+c COL 15        pe(1): Standard deviation in G magnitude (units: magnitudes) 
+c COL 16        pe(2): Standard deviation in G_BP-G_RP   (units: magnitudes) 
+
+c   Atmospheric parameters data affected by errors: 
+c               apo(i): Atmospheric parameters of the star affected by Gaia errors
+c COL 17        apo(1): Observed Effective temperature (units: kelvin)
+c COl 18        apo(2): Observed surface gravity (logg) (units: dex) 
+
+c  NO SE AGREGA
+c               apo(3): Observed [Fe/H] (units: dex) 
+c               apo(4): Observed Absorption A0 (Av~A0, see Bailer-Jones et al., 2011) (units: magnitudes)
+ 
+c   ape(i): Gaia standard deviation (1-sigma)
+c   COL 19      ape(1): Standard deviation in Effective temperature (units: kelvin)
+c   COL 20      ape(2): Standard deviation in surface gravity (logg) (units: dex) 
+
+
+c          NO SE AGREGA
+c           ape(3): Standard deviation in [Fe/H] (units: dex) 
+c           ape(4): Standard deviation in Absorption A0 (Av~A0, see Bailer-Jones et al., 2011) (units: magnitudes) 
+
+
+c **********************************************************************
+c   COL 21  xo_pn:  heliocentric  x coordinate (kpc)
+c   COL 22  yo_pn:  heliocentric  y coordinate (kpc)
+c   COL 23  zo_pn:  heliocentric  z coordinate (kpc)
+
+c **********************************************************************
+c  COL 24  vx_pn:  cartesian x coordinate (km/s)
+c  COL 25  vy_pn:  cartesian y coordinate (km/s)
+c  COL 26  vz_pn:  cartesian z coordinate (km/s)
+
+c **********************************************************************
+c  COL 27  vxo_pn:  heliocentric  vx coordinate (km/s)
+c  COL 28  vyo_pn:  heliocentric  vy coordinate (km/s)
+c  COL 29  vzo_pn:  heliocentric  vz coordinate (km/s)
+
+c  COL 30 mgen: generated mass
+c  COL 31 z : Metallicity (alpha+fe abbundances) (z=z*1e6)
+c  COL 32 PAge: Age
+
+C COL  33 priot: prioridad de la particula de acuerdo a su corte
+c COL  34 iden: un identificador de acuerdo a la probabilidad del corte de la particula
+
+c COL 35 magnitude r7 in decals
+c COL 36 color gr7 decals
+c COL 37 magnitude z7 decals
+c COL 38 lo_p de la particula generada afectada por errores degrees
+c COL 39 bo_p e la particula generada afectada por errores degrees 
+c COL 40 r_n magnitud r SDSS
+c COL 41  gr_n color sdss
+
+ESTO ES PARA EL ARCHIVO CON FIBRAS ASIGNADAS
+COLS agregadas despues de asignar fibras
+c COL 42  id
+c COL 43  cell_i
+c COL 44  cell_j
+
